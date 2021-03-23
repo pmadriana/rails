@@ -1,0 +1,9 @@
+    <div>
+        <h2> <%= @photo.title %> </h2>
+        <%= image_tag @photo.image_url %> <!--image_tag es un helper-->
+        
+        <div>
+            <%= link_to "Editar", "/photos/#{@photo.id}/edit" %>
+            <%= link_to "Eliminar", "/photos/#{@photo.id}", method: :delete %>
+        </div>
+    </div>

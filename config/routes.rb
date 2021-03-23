@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :alumnos
+
+  resources :photos
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # get "cursos/gratuitos" -> cursos_Controller CursosController def gratuitos end
 end
